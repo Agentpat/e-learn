@@ -1,0 +1,131 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .logo-container {
+    flex: 1;
+  }
+  
+  .logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .nav-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav__links li {
+    margin-right: 20px;
+  }
+  
+  .nav__links a {
+    text-decoration: none;
+    color: #444343;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav__links a:hover {
+    color: #61dafb;
+  }
+  
+  .buttons {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .login__btn>a {
+    color: #2e5762;
+    text-decoration: none;
+    background-color: aliceblue;
+    border-radius: 6px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .register__btn>a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: burlywood;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .settings__btn {
+    color: #333;
+    font-size: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .mobile__menu {
+    display: none;
+    font-size: 24px;
+    color: #201f1f;
+    cursor: pointer;
+  }
+  @media (max-width:426px) {
+    .login__btn{
+      display: none;
+    }
+    .register__btn{
+      display: none;
+    }
+    .settings__btn{
+      display: none;
+    }
+    .nav__links.show {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      position: fixed;
+      gap: 20px;
+    }
+  }
+  @media (max-width: 768px) {
+    .nav__links {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background-color: #333;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .nav__links.show {
+      display: flex;
+    }
+  
+    .mobile__menu {
+      display: block;
+    }
+  }
+  

@@ -1,0 +1,127 @@
+.popularCourses{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.bdswer{
+  background-color: rgba(63, 131, 177, 0.177);
+  width: 80%;
+  height: 770px;
+  position: absolute;
+  border-top-right-radius: 160px;
+}
+.toppe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin-left: 240px;
+    padding: 20px;
+    z-index: 1; 
+  }
+  .toppe-text>h4 {
+    text-align: left;
+  }
+  .toppe-text>h2 {
+    text-align: left;
+  }
+.toppo-text{
+  display: flex;
+  flex-direction: column;
+  align-items: left
+;
+}
+.midde{
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+ 
+.imgsd {
+    width: 550px;
+    height: auto;
+    border-radius: 8px; 
+  }
+
+  .toppe-text {
+    flex: 1;
+  }
+  
+  .toppe-button button {
+    color: #2c3e50; 
+  }
+    
+  .cardsss {
+    display: flex;
+    transition: transform 0.9s ease-out;
+  }
+  
+  .arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #3498db; 
+    color: #fff; 
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+  }
+  
+  .arrows.left {
+    left: 10px;
+    position: absolute;
+  }
+  
+  .arrows.right {
+    right: 10px;
+    position:absolute;
+  }
+  
+  @media (max-width:320px) {
+    .bdswer {
+      width: 100%;
+      border-top-right-radius: 80px;
+    }
+    .toppe{
+      width: 80%;
+      margin-left: auto;
+      align-items: last baseline;
+    }
+    .toppe-text>h2{
+      font-size: 22px;
+    }
+    .toppe-text>h4 {
+      font-size: 15px;
+      color: #2c3e50;
+      font-weight: 500;
+      font-family: roberto;
+    }
+    .imgsd{
+      display: none;
+    }
+  }
+  @media (max-width:768px) {
+    .popularCourses{
+        display: flex;
+        flex-direction:column ;
+       
+    }
+    .midde {
+        display: block;
+    }
+    .cardsss{
+      overflow: scroll;
+    }
+    .arrows.left,.arrows.right{
+        position: absolute;
+        top: 70%;
+        align-self: center;
+        display: none;
+    }
+    .imgsd{
+        width: 100%;
+    }
+  }

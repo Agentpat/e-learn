@@ -1,0 +1,116 @@
+
+
+.update {
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: auto;
+}
+
+.omo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.text2 {
+  font-size: 18px;
+  color: #555;
+}
+
+.fofofo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.omolomo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.sectA {
+  flex: 0 0 calc(33.3333% - 20px);
+  margin-bottom: 20px;
+}
+
+.dec {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bdecdor,
+.bdedor {
+  height: 10px;
+  width: 45%;
+  background-color: #333;
+}
+
+.cbisja {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.tesdfaz {
+  margin-bottom: 10px;
+}
+
+.aheuyh2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.fiu {
+  font-size: 16px;
+  color: #555;
+}
+
+.spaneds span {
+  display: block;
+  font-size: 18px;
+  color: #333;
+}
+
+.playimage {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 765px) {
+  .omolomo {
+    width: 100%;
+  }
+
+  .sectA {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .text1 {
+    font-size: 28px;
+  }
+
+  .text2 {
+    font-size: 14px;
+  }
+
+  .sectA {
+    flex: 0 0 100%;
+  }
+}

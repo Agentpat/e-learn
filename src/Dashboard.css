@@ -1,0 +1,33 @@
+/* Dashboard.css */
+section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  ul, table {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  

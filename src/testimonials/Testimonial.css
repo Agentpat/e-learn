@@ -1,0 +1,89 @@
+
+
+.testi {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .topes {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .fonts {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .fontal {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .middde {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .arrowss {
+    background-color: #007bff;
+    color: #fff;
+    margin: 0 10px;
+  }
+  
+  .buttomss {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .fonts {
+      font-size: 28px;
+    }
+  
+    .fontal {
+      font-size: 16px;
+    }
+  
+    .middde {
+      flex-direction: column;
+    }
+  
+    .buttomss {
+      padding-right: 0;
+    }
+  
+    .arrowss {
+      margin-top: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 765px) {
+    .buttomss {
+      padding-right: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .fonts {
+      font-size: 24px;
+    }
+  
+    .fontal {
+      font-size: 14px;
+    }
+  
+    .buttomss {
+      padding-right: 20px;
+    }
+  }
+  
